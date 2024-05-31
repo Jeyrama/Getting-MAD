@@ -28,3 +28,6 @@ Note:
   that the same value can appear more than once in the array. 
   In that case, the MAD will be 0.
 */
+
+
+// Solution
