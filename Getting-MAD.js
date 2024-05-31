@@ -35,9 +35,11 @@ Note:
 function getting_mad(arr) {
   let  min = Number.MAX_SAFE_INTEGER
   , sorted = arr.sort((a, b) => b - a);
-  
+
   for (let i = 0; i < sorted.length - 1; i++)
     min = Math.min(min, sorted[i] - sorted[i + 1]);
   
   return min;
 }
+
+// or
