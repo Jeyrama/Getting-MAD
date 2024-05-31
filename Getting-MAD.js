@@ -43,3 +43,18 @@ function getting_mad(arr) {
 }
 
 // or
+
+function getting_mad(arr) {
+  let differences = [];
+
+  for(let temp = 0; temp < arr.length; temp++){
+      for(let i = temp + 1; i < arr.length; i++){
+          differences.push(arr[temp] - arr[i])
+      }
+  }
+  differences = differences.map(item => {
+      if(item < 0){return -item}
+      return item;
+  })
+  return differences.sort((a,b) => a - b)[0];
+}
